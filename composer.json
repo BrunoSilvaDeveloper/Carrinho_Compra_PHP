@@ -1,0 +1,16 @@
+{
+    "name": "faell/carrinho-compra",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "BrunoSilvaDeveloper",
+            "email": "faellbrunim@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
