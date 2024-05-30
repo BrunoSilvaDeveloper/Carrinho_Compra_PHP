@@ -9,7 +9,7 @@ class ListarProduct extends Action{
     
     public function listarProduct(){
         if($this->productIsExistInCart($this->cart, $this->product) == true){
-            return $this->cart[$this->product];
+            return $this->cart[$this->product]["Quantidade"];
         }else{
             return 0;
         }  

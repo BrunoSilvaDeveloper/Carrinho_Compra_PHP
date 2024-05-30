@@ -1,6 +1,6 @@
 <?php
 
-require "vendor/autoload.php";
+require "../../vendor/autoload.php";
 use app\classes\AdicionarProduct;
 use app\classes\DeletarProduct;
 use app\classes\ListarProduct;
@@ -22,6 +22,11 @@ if (isset($_POST['produto']) && isset($_POST['acao'])) {
         $quantidadeAtualizada = (new ListarProduct($produto))-> listarProduct();
         echo $quantidadeAtualizada;
     }
+    if ($acao == 'zerar'){
+        (new DeletarProduct($produto))->zerarProduct();
+        $quantidadeAtualizada = (new ListarProduct($produto))-> listarProduct();
+        echo $quantidadeAtualizada;
+    }
     if ($acao == 'loadCart'){
         $loadCart = (new ListarProduct($produto))-> listarCart();
         echo json_encode($loadCart);
@@ -30,6 +35,14 @@ if (isset($_POST['produto']) && isset($_POST['acao'])) {
         $loadPage = (new Products)-> getProducts();
         echo json_encode($loadPage);
     }
+    if ($acao == 'loadCheckout'){
+        $priceCheckout = 0;
+        $Cart = (new ListarProduct($produto))-> listarCart();
+        foreach( $Cart as $product){
+            $priceCheckout += ($product["Quantidade"] * $product["Price"]);
+        }
+        echo $priceCheckout;
+    } 
 
     
 }

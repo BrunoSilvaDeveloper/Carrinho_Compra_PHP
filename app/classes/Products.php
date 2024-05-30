@@ -27,7 +27,7 @@ class Products{
         // Exibir os dados lidos
         return $data;
     }
-    public function setCart($data){
+    public function setProducts($data){
 
         // Passo 2: Converter os dados para JSON
         $jsonData = json_encode($data, JSON_PRETTY_PRINT);
