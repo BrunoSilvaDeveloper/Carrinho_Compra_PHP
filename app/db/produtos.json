@@ -1,152 +1,218 @@
 {
-    "Arroz" : {
-        "Quantidade" : 10,
-        "Price" : 2.49,
-        "Description" : "Arroz integral"
+    "Arroz Integral": {
+        "Quantidade": 10,
+        "Price": 2.49,
+        "Description": "Arroz integral",
+        "Category": "Grãos"
     },
-    "Feijão" : {
-        "Quantidade" : 5,
-        "Price" : 8,
-        "Description" : "Feijão Carioca"
+    "Arroz Branco": {
+        "Quantidade": 20,
+        "Price": 2.99,
+        "Description": "Arroz Branco",
+        "Category": "Grãos"
     },
-    "Macarrão" : {
-        "Quantidade" : 8,
-        "Price" : 5,
-        "Description" : "Macarrão Espaguete"
+    "Feijão Carioca": {
+        "Quantidade": 5,
+        "Price": 8,
+        "Description": "Feijão Carioca",
+        "Category": "Leguminosas"
     },
-    "Batata" : {
-        "Quantidade" : 15,
-        "Price" : 3,
-        "Description" : "Batata Inglesa"
+    "Feijão Preto": {
+        "Quantidade": 8,
+        "Price": 7.50,
+        "Description": "Feijão Preto",
+        "Category": "Leguminosas"
     },
-    "Alface" : {
-        "Quantidade" : 7,
-        "Price" : 2,
-        "Description" : "Alface Americana"
+    "Macarrão Espaguete": {
+        "Quantidade": 8,
+        "Price": 5,
+        "Description": "Macarrão Espaguete",
+        "Category": "Massas"
     },
-    "Tomate" : {
-        "Quantidade" : 12,
-        "Price" : 4,
-        "Description" : "Tomate Italiano"
+    "Macarrão Penne": {
+        "Quantidade": 12,
+        "Price": 6,
+        "Description": "Macarrão Penne",
+        "Category": "Massas"
     },
-    "Cenoura" : {
-        "Quantidade" : 20,
-        "Price" : 2.99,
-        "Description" : "Cenoura Orgânica"
+    "Batata Inglesa": {
+        "Quantidade": 15,
+        "Price": 3,
+        "Description": "Batata Inglesa",
+        "Category": "Verduras"
     },
-    "Pepino" : {
-        "Quantidade" : 18,
-        "Price" : 1.99,
-        "Description" : "Pepino Japonês"
+    "Batata Doce": {
+        "Quantidade": 10,
+        "Price": 4,
+        "Description": "Batata Doce",
+        "Category": "Verduras"
     },
-    "Pão" : {
-        "Quantidade" : 30,
-        "Price" : 4.50,
-        "Description" : "Pão de Forma Integral"
+    "Alface Americana": {
+        "Quantidade": 7,
+        "Price": 2,
+        "Description": "Alface Americana",
+        "Category": "Verduras"
     },
-    "Leite" : {
-        "Quantidade" : 25,
-        "Price" : 3.99,
-        "Description" : "Leite Desnatado"
+    "Alface Crespa": {
+        "Quantidade": 9,
+        "Price": 1.80,
+        "Description": "Alface Crespa",
+        "Category": "Verduras"
     },
-    "Café" : {
-        "Quantidade" : 15,
-        "Price" : 10,
-        "Description" : "Café Torrado e Moído"
+    "Tomate Italiano": {
+        "Quantidade": 12,
+        "Price": 4,
+        "Description": "Tomate Italiano",
+        "Category": "Verduras"
     },
-    "Açúcar" : {
-        "Quantidade" : 22,
-        "Price" : 2.80,
-        "Description" : "Açúcar Mascavo"
+    "Tomate Cereja": {
+        "Quantidade": 15,
+        "Price": 5,
+        "Description": "Tomate Cereja",
+        "Category": "Verduras"
     },
-    "Sal" : {
-        "Quantidade" : 35,
-        "Price" : 1.50,
-        "Description" : "Sal Marinho"
+    "Cenoura Orgânica": {
+        "Quantidade": 20,
+        "Price": 2.99,
+        "Description": "Cenoura Orgânica",
+        "Category": "Verduras"
     },
-    "Farinha" : {
-        "Quantidade" : 28,
-        "Price" : 4.00,
-        "Description" : "Farinha de Trigo"
+    "Cenoura Comum": {
+        "Quantidade": 18,
+        "Price": 2.50,
+        "Description": "Cenoura Comum",
+        "Category": "Verduras"
     },
-    "Óleo" : {
-        "Quantidade" : 16,
-        "Price" : 6.99,
-        "Description" : "Óleo de Canola"
+    "Pepino Japonês": {
+        "Quantidade": 18,
+        "Price": 1.99,
+        "Description": "Pepino Japonês",
+        "Category": "Verduras"
     },
-    "Manteiga" : {
-        "Quantidade" : 14,
-        "Price" : 8.50,
-        "Description" : "Manteiga Sem Sal"
+    "Pepino Comum": {
+        "Quantidade": 20,
+        "Price": 1.50,
+        "Description": "Pepino Comum",
+        "Category": "Verduras"
     },
-    "Queijo" : {
-        "Quantidade" : 10,
-        "Price" : 12.00,
-        "Description" : "Queijo Mussarela"
+    "Pão de Forma Integral": {
+        "Quantidade": 30,
+        "Price": 4.50,
+        "Description": "Pão de Forma Integral",
+        "Category": "Panificados"
     },
-    "Presunto" : {
-        "Quantidade" : 13,
-        "Price" : 11.50,
-        "Description" : "Presunto Cozido"
+    "Pão de Forma Branco": {
+        "Quantidade": 25,
+        "Price": 4.00,
+        "Description": "Pão de Forma Branco",
+        "Category": "Panificados"
     },
-    "Ovos" : {
-        "Quantidade" : 50,
-        "Price" : 7.99,
-        "Description" : "Ovos Caipira"
+    "Leite Desnatado": {
+        "Quantidade": 25,
+        "Price": 3.99,
+        "Description": "Leite Desnatado",
+        "Category": "Laticínios"
     },
-    "Maçã" : {
-        "Quantidade" : 40,
-        "Price" : 3.25,
-        "Description" : "Maçã Gala"
+    "Leite Integral": {
+        "Quantidade": 30,
+        "Price": 4.50,
+        "Description": "Leite Integral",
+        "Category": "Laticínios"
     },
-    "Banana" : {
-        "Quantidade" : 45,
-        "Price" : 2.75,
-        "Description" : "Banana Prata"
+    "Café Torrado e Moído": {
+        "Quantidade": 15,
+        "Price": 10,
+        "Description": "Café Torrado e Moído",
+        "Category": "Bebidas"
     },
-    "Laranja" : {
-        "Quantidade" : 33,
-        "Price" : 2.50,
-        "Description" : "Laranja Pera"
+    "Café Solúvel": {
+        "Quantidade": 12,
+        "Price": 15,
+        "Description": "Café Solúvel",
+        "Category": "Bebidas"
     },
-    "Uva" : {
-        "Quantidade" : 20,
-        "Price" : 7.00,
-        "Description" : "Uva Rubi"
+    "Maçã Gala": {
+        "Quantidade": 40,
+        "Price": 3.25,
+        "Description": "Maçã Gala",
+        "Category": "Frutas"
     },
-    "Melão" : {
-        "Quantidade" : 12,
-        "Price" : 6.00,
-        "Description" : "Melão Cantaloupe"
+    "Maçã Fuji": {
+        "Quantidade": 35,
+        "Price": 3.50,
+        "Description": "Maçã Fuji",
+        "Category": "Frutas"
     },
-    "Abacaxi" : {
-        "Quantidade" : 15,
-        "Price" : 5.50,
-        "Description" : "Abacaxi Pérola"
+    "Banana Prata": {
+        "Quantidade": 45,
+        "Price": 2.75,
+        "Description": "Banana Prata",
+        "Category": "Frutas"
     },
-    "Morango" : {
-        "Quantidade" : 25,
-        "Price" : 10.00,
-        "Description" : "Morango Orgânico"
+    "Banana Nanica": {
+        "Quantidade": 50,
+        "Price": 2.50,
+        "Description": "Banana Nanica",
+        "Category": "Frutas"
     },
-    "Cebola" : {
-        "Quantidade" : 30,
-        "Price" : 3.00,
-        "Description" : "Cebola Roxa"
+    "Laranja Pera": {
+        "Quantidade": 33,
+        "Price": 2.50,
+        "Description": "Laranja Pera",
+        "Category": "Frutas"
     },
-    "Alho" : {
-        "Quantidade" : 40,
-        "Price" : 1.75,
-        "Description" : "Alho Nacional"
+    "Laranja Bahia": {
+        "Quantidade": 30,
+        "Price": 3.00,
+        "Description": "Laranja Bahia",
+        "Category": "Frutas"
     },
-    "Azeite" : {
-        "Quantidade" : 22,
-        "Price" : 15.00,
-        "Description" : "Azeite Extra Virgem"
+    "Uva Rubi": {
+        "Quantidade": 20,
+        "Price": 7.00,
+        "Description": "Uva Rubi",
+        "Category": "Frutas"
     },
-    "Vinho" : {
-        "Quantidade" : 10,
-        "Price" : 50.00,
-        "Description" : "Vinho Tinto Seco"
+    "Uva Itália": {
+        "Quantidade": 18,
+        "Price": 6.50,
+        "Description": "Uva Itália",
+        "Category": "Frutas"
+    },
+    "Melão Cantaloupe": {
+        "Quantidade": 12,
+        "Price": 6.00,
+        "Description": "Melão Cantaloupe",
+        "Category": "Frutas"
+    },
+    "Melão Amarelo": {
+        "Quantidade": 10,
+        "Price": 5.00,
+        "Description": "Melão Amarelo",
+        "Category": "Frutas"
+    },
+    "Abacaxi Pérola": {
+        "Quantidade": 15,
+        "Price": 5.50,
+        "Description": "Abacaxi Pérola",
+        "Category": "Frutas"
+    },
+    "Abacaxi Havaí": {
+        "Quantidade": 12,
+        "Price": 6.00,
+        "Description": "Abacaxi Havaí",
+        "Category": "Frutas"
+    },
+    "Morango Orgânico": {
+        "Quantidade": 25,
+        "Price": 10.00,
+        "Description": "Morango Orgânico",
+        "Category": "Frutas"
+    },
+    "Morango Comum": {
+        "Quantidade": 22,
+        "Price": 8.50,
+        "Description": "Morango Comum",
+        "Category": "Frutas"
     }
 }

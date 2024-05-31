@@ -10,6 +10,7 @@ use app\classes\Products;
 // Verifica se a solicitação contém as informações necessárias
 if (isset($_POST['produto']) && isset($_POST['acao'])) {
     $produto = $_POST['produto'];
+    $produto = str_replace("%20", " ", $produto);
     $acao = $_POST['acao'];
 
     if ($acao == 'adicionar'){

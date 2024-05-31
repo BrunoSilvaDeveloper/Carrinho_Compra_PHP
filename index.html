@@ -21,9 +21,14 @@
 
     <div class="page">
         <div class="pesquisar">
-            <input type="text" id="myInput">
-            <button onclick="clearInput()">Limpar</button>
-            <button onclick="getText()">Pesquisar</button>
+            <div class="efect-pesquisar">
+                <div class="pesquisar-container">
+                    <input type="text" id="myInput" placeholder="Pesquisar...">
+                    <button onclick="clearInput()"><img src="assets/sair.png" alt=""></button>
+                    <div class="pesquisar-img"><img src="assets/pesquisar.png" alt="Pesquisar"></div>
+                </div>
+            </div>
+            <button id="button-pesquisar" >Pesquisar</button>
         </div>
         <section id="section"></section>
     </div>

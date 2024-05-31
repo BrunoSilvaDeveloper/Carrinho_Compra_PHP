@@ -1,3 +1,15 @@
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
 #container-asside{
     width: 100%;
     height: calc(100vh - 80px);
@@ -10,9 +22,103 @@
     overflow-x: hidden;
 }
 
+.pesquisar{
+    width: calc(100% - 26px);
+    height: 80px;
+    margin: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pesquisar button{
+    width: 100px;
+    height: 100%;
+    max-height: 35px;
+    padding: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+.pesquisar button:hover{
+    box-shadow: 2px 4px 10px #888888;
+}
+
+.efect-pesquisar{
+    width: 250px;
+    height: 100%;
+    max-height: 40px;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(201, 201, 201, 0.0);
+    border-radius: 5px;
+    padding: 0 2px;
+}
+
+.efect-pesquisar:focus-within {
+    border: 2px solid rgba(201, 201, 201, 0.5);
+}
+
+.pesquisar-container{
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    max-height: 35px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(201, 201, 201, 0.5);
+    border-radius: 5px;
+}
+.pesquisar-container input{
+    width: 195px;
+    height: 22px;
+    border: none;
+    
+}
+.pesquisar-container input:focus {
+    outline: none;
+    border: none;
+}
+.pesquisar-container>button>img{
+    width: 12px;
+    height: 12px;
+    margin: 0 auto;
+}
+.pesquisar-container button{
+    width: 18px;
+    height: 18px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(218, 218, 218, 0.2);
+    cursor: pointer;
+}
+
+.pesquisar-container button:hover{
+    box-shadow: none !important;
+}
+.pesquisar-img img{
+    width: 18px;
+    height: 18px;
+    margin: 0 auto;
+    padding-left: 8px;
+}
+
+
+
 #section{
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 145px);
     max-width: 810px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -21,19 +127,11 @@
     justify-items: center;
     align-items: top;
     margin: 20px;
+    margin-top: 0;
     overflow-y: auto;
     overflow-x: hidden;
 }
-body{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    flex-direction: row-reverse;
-}
+
 
 .card{
     width: 240px;
@@ -129,7 +227,7 @@ body{
 }
 .container-card-cart{
     width: 100%;
-    max-height: 550px;
+    max-height: 60vh;
     overflow-y: auto;;
 }
 .card-cart{

@@ -20,21 +20,23 @@ function enviarRequisicao(produto, acao) {
             document.getElementById("quantidade" + produto.replace(" ", "")).innerHTML = quantidadeAtualizada;
             loadCheckout('loadCheckout'); 
             if (quantidadeAtualizada == 0) {
-                document.getElementById(produto).remove();
+                document.getElementById(produto.replace(" ", "")).remove();
             }
 
             
         }
     };
-    xhr.send("produto=" + produto + "&acao=" + acao);
+    xhr.send("produto=" + produto.replace(" ", "%20") + "&acao=" + acao);
 }
 
 function adicionar(produto, price, quantidade) {
-    if (document.getElementById(produto)){
+    var idProduto = produto.replace(/\s+/g, '');
+    if (document.getElementById(idProduto)){
         adicionarProduto(produto);
     }
     else{
-        var html = '<div class="card-cart" id="'+produto+'"><div class="img-cart"><img src="../assets/'+produto+'.jpg" alt="'+produto+'"></div><div class="info-cart"><div class="container-cart"><div class="title-product-cart"><p>' + produto + '</p></div><div class="price-quant"><div class="price-cart"><p>$ '+price.toString().replace('.', ',')+'</p></div><div class="quant-cart"><button class="subtrair-cart" onclick="removerProduto(\'' + produto + '\')">-</button><div class="quantidade-cart"><p id="quantidade'+produto+'">'+quantidade+'</p></div><button class="adicionar-cart" onclick="adicionarProduto(\'' + produto + '\') ">+</button></div></div></div><div class="action-cart"><button onclick="zerarProduto(\'' + produto + '\')">x</button></div></div></div>';
+        
+        var html = '<div class="card-cart" id="'+idProduto+'"><div class="img-cart"><img src="../assets/'+idProduto+'.jpg" alt="'+produto+'"></div><div class="info-cart"><div class="container-cart"><div class="title-product-cart"><p>' + produto + '</p></div><div class="price-quant"><div class="price-cart"><p>$ '+price.toString().replace('.', ',')+'</p></div><div class="quant-cart"><button class="subtrair-cart" onclick="removerProduto(\'' + produto + '\')">-</button><div class="quantidade-cart"><p id="quantidade'+idProduto+'">'+quantidade+'</p></div><button class="adicionar-cart" onclick="adicionarProduto(\'' + produto + '\') ">+</button></div></div></div><div class="action-cart"><button onclick="zerarProduto(\'' + produto + '\')">x</button></div></div></div>';
     
         document.getElementById("container-card-cart").innerHTML += html;
         adicionarProduto(produto);
@@ -65,12 +67,12 @@ function loadCart(acao) {
         if (xhr.readyState === 4 && xhr.status === 200) {
             try {
                 var cart = JSON.parse(xhr.responseText); // Converte a resposta para um objeto JSON
-                var priceCheckout = 0;
                 for (var produto in cart) {
                     if (cart.hasOwnProperty(produto)) {
                         // var html = '<div id="' + produto + '"><h2>' + produto + '</h2><p id="quantidade' + produto + '" >Quantidade: '+cart[produto]["Quantidade"]+'</p><button onclick="adicionarProduto(\'' + produto + '\')" >Adicionar</button><button onclick="removerProduto(\'' + produto + '\')" >Remover</button></div>';
 
-                        var html = '<div class="card-cart" id="'+produto+'"><div class="img-cart"><img src="../assets/'+produto+'.jpg" alt="'+produto+'"></div><div class="info-cart"><div class="container-cart"><div class="title-product-cart"><p>' + produto + '</p></div><div class="price-quant"><div class="price-cart"><p>$ '+cart[produto]["Price"].toString().replace('.', ',')+'</p></div><div class="quant-cart"><button class="subtrair-cart" onclick="removerProduto(\'' + produto + '\') ">-</button><div class="quantidade-cart"><p id="quantidade'+produto+'">'+cart[produto]["Quantidade"]+'</p></div><button class="adicionar-cart" onclick="adicionarProduto(\'' + produto + '\') ">+</button></div></div></div><div class="action-cart"><button onclick="zerarProduto(\'' + produto + '\')">x</button></div></div></div>';
+                        var idProduto = produto.replace(/\s+/g, '');
+                        var html = '<div class="card-cart" id="'+idProduto+'"><div class="img-cart"><img src="../assets/'+idProduto+'.jpg" alt="'+produto+'"></div><div class="info-cart"><div class="container-cart"><div class="title-product-cart"><p>' + produto + '</p></div><div class="price-quant"><div class="price-cart"><p>$ '+cart[produto]["Price"].toString().replace('.', ',')+'</p></div><div class="quant-cart"><button class="subtrair-cart" onclick="removerProduto(\'' + produto + '\') ">-</button><div class="quantidade-cart"><p id="quantidade'+idProduto+'">'+cart[produto]["Quantidade"]+'</p></div><button class="adicionar-cart" onclick="adicionarProduto(\'' + produto + '\') ">+</button></div></div></div><div class="action-cart"><button onclick="zerarProduto(\'' + produto + '\')">x</button></div></div></div>';
             
                         document.getElementById("container-card-cart").innerHTML += html;
                         
@@ -146,10 +148,11 @@ function createpage(page, action, product = ''){
         document.getElementById("section").innerHTML = ''; 
         for (var produto in page) {
             if (page.hasOwnProperty(produto)) {
-                var html = '<div class="card" id="Product'+produto+'"><div class="img"> imagem </div><div class="info"><div class="title"><p>'+produto+'</p></div><div class="description"><p>' + page[produto]["Description"] + '</p></div><div class="container"><div class="price"><p>$' + page[produto]["Price"] + '</p></div><div class="action"><button onclick="adicionar(\''+produto+'\', ' + page[produto]["Price"] + ', ' + page[produto]["Quantidade"] + ')">Add to Cart</button></div></div></div></div>'
+                var idProduto = produto.replace(/\s+/g, '');
+                var html = '<div class="card" id="Product'+idProduto+'"><div class="img"> imagem </div><div class="info"><div class="title"><p>'+produto+'</p></div><div class="description"><p>' + page[produto]["Description"] + '</p></div><div class="container"><div class="price"><p>$' + page[produto]["Price"] + '</p></div><div class="action"><button onclick="adicionar(\''+produto+'\', ' + page[produto]["Price"] + ', ' + page[produto]["Quantidade"] + ')">Add to Cart</button></div></div></div></div>'
                 
                 html = html.replace('.', ',');
-                html = html.replace('imagem', '<img src="../assets/'+produto+'.jpg" alt="'+produto+'"></img>');
+                html = html.replace('imagem', '<img src="../assets/'+idProduto+'.jpg" alt="'+produto+'"></img>');
         
                 document.getElementById("section").innerHTML += html;
             }
@@ -160,11 +163,16 @@ function createpage(page, action, product = ''){
         document.getElementById("section").innerHTML = ''; 
         for (var produto in page) {
             if (page.hasOwnProperty(produto)) {
-                if (produto == product){
-                    var html = '<div class="card" id="Product'+produto+'"><div class="img"> imagem </div><div class="info"><div class="title"><p>'+produto+'</p></div><div class="description"><p>' + page[produto]["Description"] + '</p></div><div class="container"><div class="price"><p>$' + page[produto]["Price"] + '</p></div><div class="action"><button onclick="adicionar(\''+produto+'\', ' + page[produto]["Price"] + ', ' + page[produto]["Quantidade"] + ')">Add to Cart</button></div></div></div></div>'
+
+                var produtoVerificar = produto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                var productVerificar = product.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
+                if (produtoVerificar.includes(productVerificar)){
+                    var idProduto = produto.replace(/\s+/g, '');
+                    var html = '<div class="card" id="Product'+idProduto+'"><div class="img"> imagem </div><div class="info"><div class="title"><p>'+produto+'</p></div><div class="description"><p>' + page[produto]["Description"] + '</p></div><div class="container"><div class="price"><p>$' + page[produto]["Price"] + '</p></div><div class="action"><button onclick="adicionar(\''+produto+'\', ' + page[produto]["Price"] + ', ' + page[produto]["Quantidade"] + ')">Add to Cart</button></div></div></div></div>'
                     
                     html = html.replace('.', ',');
-                    html = html.replace('imagem', '<img src="../assets/'+produto+'.jpg" alt="'+produto+'"></img>');
+                    html = html.replace('imagem', '<img src="../assets/'+idProduto+'.jpg" alt="'+produto+'"></img>');
         
                     document.getElementById("section").innerHTML += html;   
                 }
@@ -178,3 +186,26 @@ loadCart('loadCart');
 loadPage('loadPage');
 //pesquisar('pesquisar', 'Feijão')
 loadCheckout('loadCheckout');
+
+document.querySelector('.pesquisar-container input').addEventListener('input', function() {
+    const button = document.querySelector('.pesquisar-container button');
+    const border = document.querySelector('.efect-pesquisar');
+    if (this.value.length > 0) {
+        button.style.display = 'flex';
+        border.style.padding = '0 5px 0 4px';
+    } else {
+        button.style.display = 'none';
+        border.style.padding = '0 2px';
+    }
+});
+
+document.querySelector('#button-pesquisar').addEventListener('click', function() {
+    getText();
+});
+
+document.querySelector('#myInput').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        getText();
+    }
+});
