@@ -1,0 +1,152 @@
+{
+    "Arroz" : {
+        "Quantidade" : 10,
+        "Price" : 2.49,
+        "Description" : "Arroz integral"
+    },
+    "Feijão" : {
+        "Quantidade" : 5,
+        "Price" : 8,
+        "Description" : "Feijão Carioca"
+    },
+    "Macarrão" : {
+        "Quantidade" : 8,
+        "Price" : 5,
+        "Description" : "Macarrão Espaguete"
+    },
+    "Batata" : {
+        "Quantidade" : 15,
+        "Price" : 3,
+        "Description" : "Batata Inglesa"
+    },
+    "Alface" : {
+        "Quantidade" : 7,
+        "Price" : 2,
+        "Description" : "Alface Americana"
+    },
+    "Tomate" : {
+        "Quantidade" : 12,
+        "Price" : 4,
+        "Description" : "Tomate Italiano"
+    },
+    "Cenoura" : {
+        "Quantidade" : 20,
+        "Price" : 2.99,
+        "Description" : "Cenoura Orgânica"
+    },
+    "Pepino" : {
+        "Quantidade" : 18,
+        "Price" : 1.99,
+        "Description" : "Pepino Japonês"
+    },
+    "Pão" : {
+        "Quantidade" : 30,
+        "Price" : 4.50,
+        "Description" : "Pão de Forma Integral"
+    },
+    "Leite" : {
+        "Quantidade" : 25,
+        "Price" : 3.99,
+        "Description" : "Leite Desnatado"
+    },
+    "Café" : {
+        "Quantidade" : 15,
+        "Price" : 10,
+        "Description" : "Café Torrado e Moído"
+    },
+    "Açúcar" : {
+        "Quantidade" : 22,
+        "Price" : 2.80,
+        "Description" : "Açúcar Mascavo"
+    },
+    "Sal" : {
+        "Quantidade" : 35,
+        "Price" : 1.50,
+        "Description" : "Sal Marinho"
+    },
+    "Farinha" : {
+        "Quantidade" : 28,
+        "Price" : 4.00,
+        "Description" : "Farinha de Trigo"
+    },
+    "Óleo" : {
+        "Quantidade" : 16,
+        "Price" : 6.99,
+        "Description" : "Óleo de Canola"
+    },
+    "Manteiga" : {
+        "Quantidade" : 14,
+        "Price" : 8.50,
+        "Description" : "Manteiga Sem Sal"
+    },
+    "Queijo" : {
+        "Quantidade" : 10,
+        "Price" : 12.00,
+        "Description" : "Queijo Mussarela"
+    },
+    "Presunto" : {
+        "Quantidade" : 13,
+        "Price" : 11.50,
+        "Description" : "Presunto Cozido"
+    },
+    "Ovos" : {
+        "Quantidade" : 50,
+        "Price" : 7.99,
+        "Description" : "Ovos Caipira"
+    },
+    "Maçã" : {
+        "Quantidade" : 40,
+        "Price" : 3.25,
+        "Description" : "Maçã Gala"
+    },
+    "Banana" : {
+        "Quantidade" : 45,
+        "Price" : 2.75,
+        "Description" : "Banana Prata"
+    },
+    "Laranja" : {
+        "Quantidade" : 33,
+        "Price" : 2.50,
+        "Description" : "Laranja Pera"
+    },
+    "Uva" : {
+        "Quantidade" : 20,
+        "Price" : 7.00,
+        "Description" : "Uva Rubi"
+    },
+    "Melão" : {
+        "Quantidade" : 12,
+        "Price" : 6.00,
+        "Description" : "Melão Cantaloupe"
+    },
+    "Abacaxi" : {
+        "Quantidade" : 15,
+        "Price" : 5.50,
+        "Description" : "Abacaxi Pérola"
+    },
+    "Morango" : {
+        "Quantidade" : 25,
+        "Price" : 10.00,
+        "Description" : "Morango Orgânico"
+    },
+    "Cebola" : {
+        "Quantidade" : 30,
+        "Price" : 3.00,
+        "Description" : "Cebola Roxa"
+    },
+    "Alho" : {
+        "Quantidade" : 40,
+        "Price" : 1.75,
+        "Description" : "Alho Nacional"
+    },
+    "Azeite" : {
+        "Quantidade" : 22,
+        "Price" : 15.00,
+        "Description" : "Azeite Extra Virgem"
+    },
+    "Vinho" : {
+        "Quantidade" : 10,
+        "Price" : 50.00,
+        "Description" : "Vinho Tinto Seco"
+    }
+}

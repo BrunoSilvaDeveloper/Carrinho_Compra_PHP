@@ -31,7 +31,7 @@ if (isset($_POST['produto']) && isset($_POST['acao'])) {
         $loadCart = (new ListarProduct($produto))-> listarCart();
         echo json_encode($loadCart);
     }
-    if ($acao == 'loadPage'){
+    if ($acao == 'loadPage' || $acao == 'pesquisar'){
         $loadPage = (new Products)-> getProducts();
         echo json_encode($loadPage);
     }

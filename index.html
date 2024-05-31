@@ -7,7 +7,6 @@
     <title>Carrinho de Compras</title>
 </head>
 <body>
-
     <aside id="container-asside">
         <div class="title-cart">Cart</div>
         <div class="container-card-cart" id="container-card-cart"></div>
@@ -20,7 +19,14 @@
         </div>
     </aside>
 
-    <section id="section"></section>
+    <div class="page">
+        <div class="pesquisar">
+            <input type="text" id="myInput">
+            <button onclick="clearInput()">Limpar</button>
+            <button onclick="getText()">Pesquisar</button>
+        </div>
+        <section id="section"></section>
+    </div>
     <script src="Javascript/functions.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@ class Products{
 
     public function getProducts(): array{
         // Passo 1: Ler o conteúdo do arquivo JSON
-        $file = __DIR__ .'/produtos.json';
+        $file = __DIR__ .'/../db/produtos.json';
         $jsonData = file_get_contents($file);
 
         if ($jsonData === false) {
@@ -40,7 +40,7 @@ class Products{
         }
 
         // Passo 3: Escrever os dados JSON no arquivo
-        $file = __DIR__ .'/produtos.json';
+        $file = __DIR__ .'/../db/produtos.json';
 
         // Abre o arquivo para escrita (cria o arquivo se ele não existir)
         $fileHandle = fopen($file, 'w');
